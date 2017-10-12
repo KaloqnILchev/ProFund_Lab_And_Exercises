@@ -10,20 +10,23 @@
             var input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int difference = int.Parse(Console.ReadLine());
 
-            int secondElement;
+            int count = 0;
 
             for (int i = 0; i < input.Length; i++)
             {
-                for (int j = 0; j < input.Length; j++)
-                {
-                    if (input[i])
-                    {
+                int currentNum = input[i];
 
+                for (int j = i + 1; j < input.Length; j++)
+                {
+                    int secondNum = input[j];
+
+                    if (currentNum - secondNum == difference || secondNum - currentNum == difference)
+                    {
+                        count++;
                     }
                 }
-
             }
-
+            Console.WriteLine(count);
         }
     }
 }
