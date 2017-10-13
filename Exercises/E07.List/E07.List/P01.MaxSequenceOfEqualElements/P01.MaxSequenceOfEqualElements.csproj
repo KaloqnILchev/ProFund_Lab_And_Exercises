@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D905C81-BFE9-47DA-9586-9A863AC1B8BE}</ProjectGuid>
+    <ProjectGuid>{D7F5832A-B564-4642-8C3D-C9F464B4DB1E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P08.MostFrequentNumber</RootNamespace>
-    <AssemblyName>P08.MostFrequentNumber</AssemblyName>
+    <RootNamespace>P01.MaxSequenceOfEqualElements</RootNamespace>
+    <AssemblyName>P01.MaxSequenceOfEqualElements</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StartUp.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace P08.MostFrequentNumber
+﻿namespace P08.MostFrequentNumber
 {
-    class Program
+    using System;
+    using System.Linq;
+
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] numbers = Console.ReadLine()
             .Split(' ')
@@ -16,8 +13,6 @@ namespace P08.MostFrequentNumber
             .ToArray();
             int mostFrequentNumbr = 0;
             int repetitions = 0;
-            //int number = 0; // вариант 1 70/100
-            //int numberPos = 0; // вариант 2 80/100
 
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -27,25 +22,16 @@ namespace P08.MostFrequentNumber
                 {
                     if (currentNumber == numbers[j])
                     {
-                        //numberPos = index - counter; // вариант 2 80/100
                         counter++;
                     }
-
                 }
-
                 if (counter > repetitions)
                 {
                     mostFrequentNumbr = currentNumber;
                     repetitions = counter;
-                    //number = numbers[i]; // вариант 1 - 70/100
                 }
             }
-
-            //Console.WriteLine(longest);
-            //Console.WriteLine(numberPos);
-
-            Console.WriteLine("{0}", mostFrequentNumbr); // вариант 1 - 70/100
-                                                         //Console.WriteLine("{0}", numbers[numberPos]); // вариант 2 - 80/100
+            Console.WriteLine("{0}", mostFrequentNumbr); 
         }
     }
 }
