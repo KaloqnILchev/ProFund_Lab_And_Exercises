@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7F5832A-B564-4642-8C3D-C9F464B4DB1E}</ProjectGuid>
+    <ProjectGuid>{F727B283-F532-468A-AAC9-A9CE3D59C6AC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P01.MaxSequenceOfEqualElements</RootNamespace>
-    <AssemblyName>P01.MaxSequenceOfEqualElements</AssemblyName>
+    <RootNamespace>P07.BombNumbers</RootNamespace>
+    <AssemblyName>P07.BombNumbers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

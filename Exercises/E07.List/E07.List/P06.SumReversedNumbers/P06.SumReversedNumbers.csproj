@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7F5832A-B564-4642-8C3D-C9F464B4DB1E}</ProjectGuid>
+    <ProjectGuid>{B8D90115-7141-4591-8FFB-B8345EC709AF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P01.MaxSequenceOfEqualElements</RootNamespace>
-    <AssemblyName>P01.MaxSequenceOfEqualElements</AssemblyName>
+    <RootNamespace>P06.SumReversedNumbers</RootNamespace>
+    <AssemblyName>P06.SumReversedNumbers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

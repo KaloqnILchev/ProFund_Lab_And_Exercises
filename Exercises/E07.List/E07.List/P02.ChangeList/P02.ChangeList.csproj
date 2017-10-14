@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D7F5832A-B564-4642-8C3D-C9F464B4DB1E}</ProjectGuid>
+    <ProjectGuid>{1960BAE0-2909-44F6-967A-7F9E4D42F84C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P01.MaxSequenceOfEqualElements</RootNamespace>
-    <AssemblyName>P01.MaxSequenceOfEqualElements</AssemblyName>
+    <RootNamespace>P02.ChangeList</RootNamespace>
+    <AssemblyName>P02.ChangeList</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
