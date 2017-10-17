@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.SumReversedNumbersVar2"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.BombNumbers", "P07.BombNumbers\P07.BombNumbers.csproj", "{F727B283-F532-468A-AAC9-A9CE3D59C6AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.LongestIncreasingSubsequence", "P04.LongestIncreasingSubsequence\P04.LongestIncreasingSubsequence.csproj", "{B9F16043-31C5-4727-ADFB-BA40DED78F16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.ArrayManipulator", "P05.ArrayManipulator\P05.ArrayManipulator.csproj", "{5998FFC9-81FC-4245-9EBA-5B59E1E20ADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{F727B283-F532-468A-AAC9-A9CE3D59C6AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F727B283-F532-468A-AAC9-A9CE3D59C6AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F727B283-F532-468A-AAC9-A9CE3D59C6AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F16043-31C5-4727-ADFB-BA40DED78F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F16043-31C5-4727-ADFB-BA40DED78F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F16043-31C5-4727-ADFB-BA40DED78F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F16043-31C5-4727-ADFB-BA40DED78F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5998FFC9-81FC-4245-9EBA-5B59E1E20ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5998FFC9-81FC-4245-9EBA-5B59E1E20ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5998FFC9-81FC-4245-9EBA-5B59E1E20ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5998FFC9-81FC-4245-9EBA-5B59E1E20ADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
