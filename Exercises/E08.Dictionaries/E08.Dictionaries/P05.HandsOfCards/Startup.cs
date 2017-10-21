@@ -16,16 +16,23 @@
                 string[] playersEnters = input.Split(':').ToArray();
                 string playerName = playersEnters[0];
                 string playerHand = playersEnters[1];
+                string powerOfCard = "";
+                string typeOfCard = "";
+
+                Dictionary<string, int> cardsType = new Dictionary<string, int>()
+                {
+                    2 2;
+                };
 
                 string[] playerCards = playerHand.Split(new char[] { ',', ' ' },
                     StringSplitOptions.RemoveEmptyEntries).ToArray();
 
-                Console.WriteLine($"{playerName}");
-                Console.WriteLine($"{playerHand}");
-                foreach (var item in playerCards)
+
+                foreach (var card in playerCards)
                 {
-                    Console.Write(item + " ");
+
                 }
+
             }
         }
     }
