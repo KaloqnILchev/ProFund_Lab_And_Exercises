@@ -46,7 +46,7 @@
             foreach (var person in players)
             {
                 var name = person.Key;
-                var cardsSum = person.Value.Sum();
+                var cardsSum = person.Value.Sum(); 
 
                 Console.WriteLine($"{name}: {cardsSum}");
             }
