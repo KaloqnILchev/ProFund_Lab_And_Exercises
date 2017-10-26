@@ -3,37 +3,98 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class StartUp
     {
+        public static void Main()
+        {
+            int entities = int.Parse(Console.ReadLine());
+
+            var shop = new Dictionary<string, decimal>();
+            for (int entitiesCntIndex = 1; entitiesCntIndex <= entities; entitiesCntIndex++)
+            {
+                var tokens = Console.ReadLine().Split('-').ToArray();
+                string product = tokens[0];
+                decimal price = decimal.Parse(tokens[1]);
+
+                if (shop.ContainsKey(product))
+                {
+                    shop[product] = price;
+                }
+                else
+                {
+                    shop.Add(product, price);
+                }
+            }
+
+            string line = Console.ReadLine();
+            List<Customer> customers = new List<Customer>();
+            while (line != "end of clients")
+            {
+                var tokens = line.Split(new char[] { '-', ',' }).ToArray();
+
+                string customerName = tokens[0];
+                string customerProduct = tokens[1];
+                int customerQuantity = int.Parse(tokens[2]);
+
+                if (shop.ContainsKey(customerProduct))
+                {
+                    var customerShopList = new Dictionary<string, int>();
+                    customerShopList.Add(customerProduct, customerQuantity);
+                    decimal customerBill = shop[customerProduct] * customerQuantity;
+
+                    var customer = new Customer(customerName, customerShopList, customerBill);
+
+                    if (customers.Any(x => x.Name == customerName))
+                    {
+                        var currentCustomer = customers.First(x => x.Name == customerName);
+
+                        if (currentCustomer.ShopList.ContainsKey(customerProduct))
+                        {
+                            currentCustomer.ShopList[customerProduct] += customerQuantity;
+                            currentCustomer.Bill += shop[customerProduct] * customerQuantity;
+                        }
+                        else
+                        {
+                            currentCustomer.ShopList[customerProduct] = customerQuantity;
+                            currentCustomer.Bill += shop[customerProduct] * customerQuantity;
+                        }
+                    }
+                    else
+                    {
+                        customers.Add(customer);
+                    }
+                }
+
+                line = Console.ReadLine();
+            }
+
+            foreach (var customer in customers.OrderBy(x => x.Name))
+            {
+                Console.WriteLine($"{customer.Name}");
+                foreach (var shoplist in customer.ShopList)
+                {
+                    Console.WriteLine($"-- {shoplist.Key} - {shoplist.Value}");
+                }
+                Console.WriteLine($"Bill: {customer.Bill:f2}");
+            }
+            Console.WriteLine($"Total bill: {customers.Sum(x => x.Bill):f2}");
+        }
 
         class Customer
         {
-            public string Name { get; set; }
-            public Dictionary<string, int> productsAndQuantity { get; set; }
-            public decimal Bell { get; set; }
-        }
-
-        public static void Main(string[] args)
-        {
-            int n = int.Parse(Console.ReadLine());
-
-            var products = new Dictionary<string, decimal>();
-
-            for (int i = 0; i < n; i++)  
+            public Customer(string name, Dictionary<string, int> shopList, decimal bill)
             {
-                var line = Console.ReadLine().Split('-');
-                var product = line[0];
-                var price = decimal.Parse(line[1]);
-
-                if (!products.ContainsKey(product))
-                {
-                    products.Add(product, 0);
-                }
-
+                Name = name;
+                ShopList = shopList;
+                Bill = bill;
             }
+
+            public string Name { get; set; }
+
+            public Dictionary<string, int> ShopList { get; set; }
+
+            public decimal Bill { get; set; }
         }
     }
 }
