@@ -22,7 +22,7 @@
 
             var products = new Dictionary<string, decimal>();
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)  
             {
                 var line = Console.ReadLine().Split('-');
                 var product = line[0];
