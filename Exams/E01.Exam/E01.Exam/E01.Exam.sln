@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.SoftUniCoffeeOrders", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.CommandInterpreter", "P02.CommandInterpreter\P02.CommandInterpreter.csproj", "{4BB15833-100A-47DD-916F-0E8ADEEA3DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.RageQuit", "P03.RageQuit\P03.RageQuit.csproj", "{BA0F8C7B-1BFB-402F-BFB5-138CA11BA9C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.RageQuitVar1", "P03.RageQuit\P03.RageQuitVar1.csproj", "{BA0F8C7B-1BFB-402F-BFB5-138CA11BA9C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.Files", "P04.Files\P04.Files.csproj", "{BFB0AC3F-31DC-4E99-A1C1-87943A7C5021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.RageQuitVar2", "P03.RageQuitVar2\P03.RageQuitVar2.csproj", "{F0315167-14D5-4B48-8A63-E123BD0F43AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BFB0AC3F-31DC-4E99-A1C1-87943A7C5021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB0AC3F-31DC-4E99-A1C1-87943A7C5021}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB0AC3F-31DC-4E99-A1C1-87943A7C5021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0315167-14D5-4B48-8A63-E123BD0F43AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0315167-14D5-4B48-8A63-E123BD0F43AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0315167-14D5-4B48-8A63-E123BD0F43AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0315167-14D5-4B48-8A63-E123BD0F43AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
