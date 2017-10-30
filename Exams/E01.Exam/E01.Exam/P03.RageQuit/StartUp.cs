@@ -1,4 +1,4 @@
-﻿namespace P03.RageQuit
+﻿namespace P03.RageQuitVar1
 {
     using System;
 
